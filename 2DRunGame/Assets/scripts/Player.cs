@@ -39,14 +39,28 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Jump()
     {
-
+        //bool = 輸入.按鈕狀態(按鈕表.按鈕)
+        bool Space = Input.GetKeyDown(KeyCode.Space);
+        //動畫控制器,設定bool("參數名稱",值)
+        ani.SetBool("跳躍開關",Space);
     }
     /// <summary>
     /// 滑行
     /// </summary>
     private void Slide()
     {
+        bool Ctrl = Input.GetKey(KeyCode.LeftControl);
+        ani.SetBool("滑行開關", Ctrl);
+        //站立  -0.1 -0.4 1 3.2
+        //滑行  -0.1 -1.5 1 1.4
+        if (Ctrl)
+        {
+            
+        }
+        else
+        {
 
+        }
     }
     /// <summary>
     /// 吃金幣
@@ -86,7 +100,8 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        
+        Jump();
+        Slide();
     }
     #endregion
 

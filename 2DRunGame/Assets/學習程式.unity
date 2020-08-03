@@ -393,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711616750}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.87, y: 1.49, z: -13.99}
+  m_LocalPosition: {x: -1.16, y: 2.68, z: -11.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 1767403429}
   - component: {fileID: 1767403430}
   - component: {fileID: 1767403431}
+  - component: {fileID: 1767403432}
   m_Layer: 0
   m_Name: "\u5B78\u7FD2\u7528\u7269\u4EF6"
   m_TagString: Untagged
@@ -594,6 +595,21 @@ MonoBehaviour:
   tra: {fileID: 304607128}
   cube: {fileID: 324434436}
   DirectionalLight: {fileID: 711616751}
+  C: {fileID: 2061081602}
+--- !u!114 &1767403432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767403426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6417d3c7b59065d48bffb542dbf1af6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 0
+  score: 100
 --- !u!1 &2061081600
 GameObject:
   m_ObjectHideFlags: 0
